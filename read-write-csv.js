@@ -63,18 +63,15 @@ fs.createReadStream(path)
 
 const csvWriter = createObjectCsvWriter({
 	path: carPath,
-    header:[
-        {id:"make", title: "Make"},
-        {id: "model", title: "Model"},
-        {id: "year", title: "Year"},
-    ],
+	header: [
+		{ id: "make", title: "Make" },
+		{ id: "model", title: "Model" },
+		{ id: "year", title: "Year" },
+	],
 });
 
 class car {
-	constructor(make, model, year){
-		    this.make = this.make,
-    this.model = this.model,
-
+	constructor(make, model, year) {
+		(this.make = this.make), (this.model = this.model), this;
 	}
 }
-
